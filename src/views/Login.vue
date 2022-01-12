@@ -1,13 +1,16 @@
 <template>
   <div class="login">
-   Login
+   <FormLogin formType="login"/>
   </div>
 </template>
 
 <script>
+import FormLogin from '../components/FormLogin.vue'
 export default {
-  name: 'Login'
-
+  name: 'Login',
+  components: {
+    FormLogin: FormLogin
+  }
 }
 </script>
 
